@@ -44,6 +44,11 @@ REFERENCIAS
 - https://github.com/michaelpq/pg_plugins/blob/master/receiver_raw/receiver_raw.c
 - (1) http://www.postgresql.org/docs/9.3/static/libpq-connect.html#LIBPQ-CONNSTRING
 
+TODO
+----
+
+- Actualizar a la nueva sintaxis: https://www.postgresql.org/docs/9.5/static/sql-refreshmaterializedview.html
+
 COLABORADORES
 -------------
 
