@@ -1,0 +1,29 @@
+-- $Id: INSTALL.txt,v 1.1 2015/03/05 15:07:53 aosorio Exp $
+
+REQUERIMIENTOS
+--------------
+
+  * PosgreSQL 9.3 o superior.
+  * Paquete postgresql-server-dev-<POSTGRESQL VERSION> (para poder ejecutar el
+    'make install').
+
+INSTALACIÓN
+-----------
+
+1. INSTALAR mv_updater
+
+  Ejecutando 'make install' en scripts/mv_updater se instalarán los archivos
+  necesarios para el servicio.
+
+3. CONFIGURAR shared_preload_libraries
+
+  En el archivo
+  «/etc/postgresql/<POSTGRESQL VERSION>/<CLUSTER NAME>/postgresql.conf» agregar 
+  la cadena 'mv_updater'. De esta forma se indica a PostgreSQL que inicie el
+  bgworker 'mv_updater'.
+
+4. CONFIGURAR PARÁMETROS DEL BGWORKER
+
+  En el archivo README.txt puede encontrar todos los parámetros configurables
+  del servicio. Éstos se agregan en el archivo «postgresql.conf», en la sección
+  "CUSTOMIZED OPTIONS".
