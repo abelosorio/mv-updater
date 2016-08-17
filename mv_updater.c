@@ -1,7 +1,4 @@
-/* $Id: mv_updater.c,v 1.20 2015/06/30 15:39:43 aosorio Exp $
- *
- * @file
- * Background worker para actualización asincrónica de vistas materializadas.
+/* Background worker para actualización asincrónica de vistas materializadas.
  * Diseñado para PostgreSQL 9.4.
  *
  * Modo de uso (en PostgreSQL):

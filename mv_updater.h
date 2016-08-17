@@ -1,6 +1,3 @@
-/* $Id: mv_updater.h,v 1.6 2015/05/18 15:46:31 aosorio Exp $
- */
-
 #include "time.h"
 #include "libpq-fe.h"
 #include "stdio.h"
